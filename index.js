@@ -8,7 +8,7 @@ const routes = require("./routes/routes.js");
 const app = express();
 
 app.use(bodyParser.json());
-app.use(cors({ origin: "http//localhost:4200" }));
+app.use(cors());
 
 app.listen(3000, () => console.log("server at started port:3000"));
 app.use("/employee", routes);
